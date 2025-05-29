@@ -1,20 +1,19 @@
-# Use official Node.js image
-FROM node:18-alpine
+# Use official Node.js image as build environment
+FROM node:18-alpine AS build
 
-# Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json
-COPY package.json ./
+COPY package.json package-lock.json* ./
+RUN npm install
 
-# Install dependencies
-RUN npm install --production
+COPY . ./
+RUN npm run build
 
-# Copy the rest of the app
-COPY . .
+# Use Nginx to serve the static build
+FROM nginx:alpine
 
-# Expose port 3000
+COPY --from=build /app/build /usr/share/nginx/html
+
 EXPOSE 3000
 
-# Start the React app
-CMD ["npm", "start"]
+CMD ["nginx", "-g", "daemon off;"]
