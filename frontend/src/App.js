@@ -195,7 +195,7 @@ const TypingTest = () => {
     <div style={{
       fontSize: 32,
       fontFamily: 'monospace',
-      background: '#23272f',
+      background: '#4c4acf',
       color: '#eee',
       padding: 24,
       borderRadius: 8,
