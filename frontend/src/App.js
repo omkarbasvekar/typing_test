@@ -266,12 +266,12 @@ const TypingTest = () => {
     <div style={{ minHeight: '100vh', background: BG, padding: 0, margin: 0, fontFamily: 'Inter, Segoe UI, Arial, sans-serif' }}>
       <div style={{ maxWidth: 900, margin: '0 auto', paddingTop: 40, paddingBottom: 40 }}>
         <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 32 }}>
-          <h1 style={{ color: PRIMARY, fontWeight: 800, fontSize: 36, letterSpacing: 1, margin: 0 }}>Typing Speed Analyzer Om</h1>
+          <h1 style={{ color: PRIMARY, fontWeight: 800, fontSize: 36, letterSpacing: 1, margin: 0 }}>Typing Speed Analyzer Om </h1>
         </header>
         <section style={{ background: CARD, borderRadius: 16, padding: 32, boxShadow: '0 2px 16px #0001', marginBottom: 32, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div style={{ marginBottom: 24, fontSize: 18, color: SUBTLE, fontWeight: 500, letterSpacing: 1, textAlign: 'center' }}>
             <span style={{ fontSize: 28, color: PRIMARY, fontWeight: 700 }}>Word Test</span><br/>
-            Type the words below as fast and accurately as you can!
+            Type the words below as fast and accurately as you can asdfghj!
           </div>
           <div style={{ display: 'flex', gap: 16, marginBottom: 24 }}>
             <button onClick={handleRestart} style={{ background: PRIMARY, color: TEXT, border: 'none', borderRadius: 8, padding: '10px 28px', fontSize: 16, fontWeight: 600, cursor: 'pointer', boxShadow: '0 2px 8px #0002', transition: 'background 0.2s' }}>Restart</button>
